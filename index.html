@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Sahanvith Groups | Baddipadige Karunakar Reddy</title>
+<link rel="icon" href="logo.png">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0B1F17] text-white font-sans">
+
+<header class="bg-white text-slate-900 px-4 py-3 border-b flex flex-wrap items-center justify-between gap-3">
+  <div class="flex items-center gap-3">
+    <img src="logo.png" alt="Logo" class="w-12 h-12 rounded-full border-2 border-[#C59B27] object-contain">
+    <div>
+      <h1 class="text-lg font-extrabold text-[#14452F] leading-none">SAHANVITH GROUPS</h1>
+      <p class="text-[10px] font-bold text-[#C59B27] uppercase mt-1">Baddipadige Karunakar Reddy • Founder & Managing Director</p>
+    </div>
+  </div>
+  <div class="flex gap-2">
+    <a href="tel:+919392932458" class="text-xs font-bold text-[#14452F] px-3 py-2">📞 +91 93929 32458</a>
+    <a href="https://wa.me/919392932458" target="_blank" class="bg-[#14452F] text-white text-xs font-bold px-4 py-2 rounded-full">WhatsApp</a>
+  </div>
+</header>
+
+<main class="max-w-7xl mx-auto p-4 space-y-5">
+
+  <!-- About & Director Card -->
+  <section class="bg-[#14452F] border border-[#C59B27]/40 rounded-2xl p-5 grid lg:grid-cols-12 gap-5 items-center">
+    <div class="lg:col-span-7 space-y-2">
+      <span class="bg-[#C59B27] text-[#0B1F17] text-[10px] font-extrabold px-3 py-1 rounded-full uppercase">About Sahanvith Groups</span>
+      <h2 class="text-xl font-extrabold">Multi-Sector Enterprise Built on Trust, Quality & Punctuality</h2>
+      <p class="text-sm text-slate-200">Headquartered in Hyderabad - 500055, Telangana, <strong>Sahanvith Groups</strong> operates across Hatsun Wholesale Dairy Distribution, Branded & Generic Healthcare, an 8-Vehicle Cold-Chain & Commercial Fleet, and Culinary Hospitality (Tastify).</p>
+    </div>
+    <div class="lg:col-span-5 bg-black/30 border border-[#C59B27]/40 rounded-xl p-4 flex items-center gap-4">
+      <img src="director.jpg" alt="MD" onerror="this.src='logo.png'" class="w-16 h-16 rounded-xl border-2 border-[#C59B27] object-cover shrink-0">
+      <div>
+        <div class="text-[10px] text-[#E6C25A] font-bold uppercase">Founder & Managing Director</div>
+        <div class="text-base font-extrabold">Baddipadige Karunakar Reddy</div>
+        <div class="text-xs text-slate-300 mt-0.5">4 Verticals • 8 Vehicles • 5+ Yrs • 5★ Rated</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 Ventures Interactive Grid -->
+  <section class="grid lg:grid-cols-12 gap-5 items-start">
+    <div class="lg:col-span-5 bg-white/5 border border-white/15 rounded-2xl p-4 space-y-2.5">
+      <div class="text-xs font-bold text-[#E6C25A] uppercase pb-1">Select a Venture (Tap to View)</div>
+      <button onclick="setV(0)" id="b0" class="w-full text-left p-3 rounded-xl border-2 border-[#C59B27] bg-white/15 font-bold text-sm">🥛 Sahanvith Milk Agencies →</button>
+      <button onclick="setV(1)" id="b1" class="w-full text-left p-3 rounded-xl border border-white/15 bg-white/5 font-bold text-sm">⚕️ Sahanvith Generic Medical & General Stores →</button>
+      <button onclick="setV(2)" id="b2" class="w-full text-left p-3 rounded-xl border border-white/15 bg-white/5 font-bold text-sm">🚛 Sahanvith Logistics →</button>
+      <button onclick="setV(3)" id="b3" class="w-full text-left p-3 rounded-xl border border-white/15 bg-white/5 font-bold text-sm">🍽️ Tastify Arabian Mandi & Restaurant →</button>
+    </div>
+
+    <div class="lg:col-span-7 bg-white text-slate-900 rounded-2xl p-6 border-2 border-[#C59B27] space-y-4">
+      <span id="t1" class="text-xs font-extrabold text-[#14452F] bg-emerald-100 px-3 py-1 rounded-full"></span>
+      <h3 id="t2" class="text-xl font-extrabold"></h3>
+      <p id="t3" class="text-sm text-slate-700"></p>
+      <div class="bg-[#F8F7F2] p-3 rounded-xl border text-xs"><strong class="text-[#14452F]">📍 Address: </strong><span id="t4"></span></div>
+      <ul id="t5" class="grid sm:grid-cols-2 gap-2 text-xs font-semibold"></ul>
+      <div class="pt-3 border-t flex items-center justify-between">
+        <span class="text-xs font-bold">Contact: <b id="t6"></b></span>
+        <div class="flex gap-2">
+          <a id="c1" href="#" class="bg-[#14452F] text-white text-xs font-bold px-4 py-2 rounded-lg">📞 Call</a>
+          <a id="c2" href="#" target="_blank" class="bg-emerald-600 text-white text-xs font-bold px-4 py-2 rounded-lg">💬 WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="text-center text-xs text-slate-400 py-3 border-t border-white/10">
+  © 2026 Sahanvith Groups • Baddipadige Karunakar Reddy • Hyderabad - 500055 • GSTIN: 36AZTPB7115R1Z0
+</footer>
+
+<script>
+const D=[
+["Authorised Hatsun Wholesale • 3+ Yrs • 5★ Rated","Sahanvith Milk Agencies","Authorised Wholesale Distributorship for Hatsun Agro Products serving for 3+ years. Fresh Milk, Curd, Yoghurts & Paneer with assured on-time delivery and polite staff.","Flat No: 504, 5th Floor, Siva Sai Enclave Block-A, Sri Ram Nagar, Suraram, Medchal-Malkajgiri, Hyd - 500055 | GSTIN: 36AZTPB7115R1Z0 | FSSAI: 13624014000073",["✔ Hatsun Agro Authorised Distributor","✔ Serving Since 3+ Years","✔ Fresh Milk, Curd, Yoghurts & Paneer","✔ Assured On-Time Delivery","✔ 5-Star Customer Rating (★★★★★)","✔ Polite & Trained Staff"],"+919392932458","+91 93929 32458"],
+["Branded & Generic Pharmacy • 2+ Yrs • 30%-80% Off","Sahanvith Generic Medical and General Stores","Serving for 2+ years with all Branded & Generic Medicines available at 30%–80% discount and affordable prices along with general store essentials.","Sy No: 109/A, Plot No: 48, Shop No: 1, Beside Pista House, Bahadurpally, Dundigal, Gandimaisamma, Medchal-Malkajgiri, Hyd - 500043",["✔ Serving Since 2+ Years","✔ 30% - 80% Discount on All Medicines","✔ All Branded & Generic Medicines","✔ Highly Affordable Prices","✔ 100% Genuine Certified Stock","✔ General Store Essentials Available"],"+919392932458","+91 93929 32458"],
+["8-Vehicle Commercial & Cold-Chain Fleet","Sahanvith Logistics","Strong fleet of 8 commercial & refrigerated vehicles operated by well-trained, experienced drivers and helpers for reliable B2B transport.","Sri Ram Nagar, Suraram, Medchal-Malkajgiri, Hyd - 500055 | Hyderabad & Regional Routes",["✔ 8 Vehicles Total Fleet","✔ 2 Eicher Refrigerator Vehicles","✔ 1 Intra Refrigerator & 1 Leyland Puffed","✔ 2 Tata Azura 710 Trucks","✔ 2 Tata Intra V70 Closed Body","✔ Well-Trained Experienced Drivers & Helpers"],"+919392932458","+91 93929 32458"],
+["Best Food Since 5+ Yrs • AC Dining & Party Hall","Tastify Arabian Mandi and Restaurant (Sahanvith Group)","Serving trusted, quality food for 5+ years in a cinematic atmosphere with music, AC dining hall, party hall, free Wi-Fi, experienced chefs & staff.","Maisammaguda, Medchal-Malkajgiri, Hyderabad, Telangana | Dine-In, Takeaway & Party Hall",["✔ Best Food Serving Since 5+ Years","✔ Trusted & Quality Food","✔ Cinematic Atmosphere & Music","✔ Fully AC Dining Hall","✔ Dedicated Party Hall & Free Wi-Fi","✔ Experienced Chefs & Polite Staff"],"+919966888060","+91 99668 88060"]
+];
+function setV(i){
+  const x=D[i];
+  t1.textContent=x[0];t2.textContent=x[1];t3.textContent=x[2];t4.textContent=x[3];t6.textContent=x[6];
+  c1.href="tel:"+x[5];c2.href="https://wa.me/"+x[5].replace("+","");
+  t5.innerHTML=x[4].map(s=>`<li class="bg-slate-50 p-2 rounded-lg border">${s}</li>`).join("");
+  for(let k=0;k<4;k++)document.getElementById("b"+k).className=k===i?"w-full text-left p-3 rounded-xl border-2 border-[#C59B27] bg-white/15 font-bold text-sm":"w-full text-left p-3 rounded-xl border border-white/15 bg-white/5 font-bold text-sm";
+}
+setV(0);
+</script>
+</body>
+</html>
